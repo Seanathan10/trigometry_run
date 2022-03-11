@@ -1,5 +1,3 @@
-document.getElementById( "button_id" );
-
 function Test() {
     alert("test");
 }
