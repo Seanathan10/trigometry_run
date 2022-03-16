@@ -1,0 +1,252 @@
+/* CSS FOR THE INDEX (SPINNING LOADING) PAGE AND THE GAME PAGE */
+
+html {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(129, 5, 5);
+    font-family: "Comic Sans MS";
+    overflow: hidden;
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Div1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.Title {
+    color: blue;
+    animation: color-change 5s infinite;
+    padding: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.Title:hover {
+    transform: scale( 1.5 ) rotateX( 1turn );
+}
+
+.Title2 {
+    color: red;
+    animation: color-change 5s infinite;
+    padding: 3rem;
+}
+
+.Title2:hover {
+    color: lime;
+}
+
+@keyframes color-change {
+    0% { color: red; }
+    20% { color: yellow }
+    40% { color: lime; }
+    60% { color: blue; }
+    80% { color: purple; }
+    90% { color: pink; }
+    100% { color: red; }
+}
+
+.DivTest {
+    /* border: 5px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .Div1 { */
+    /* border: 5px solid lime; */
+/* } */
+
+.GameFrame {
+    padding: 1.5rem;
+}
+
+.DivTest2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Marquee {
+    color: red;
+    animation: color-change 5s infinite;
+    padding: 3rem;
+    animation: scroll-left 15s linear infinite, color-change2 5s infinite;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* .Marquee:hover { */
+    /* animation-play-state: paused; */
+/* } */
+
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(140%);
+    }
+    100% {
+        -moz-transform: translateX(-140%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(140%);
+    }
+    100% {
+        -webkit-transform: translateX(-140%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(140%);
+        -webkit-transform: translateX(140%);
+        transform: translateX(140%);
+    }
+    100% {
+        -moz-transform: translateX(-140%);
+        -webkit-transform: translateX(-140%);
+        transform: translateX(-140%);
+    }
+}
+
+@keyframes color-change2 {
+    0% { color: red; }
+    20% { color: pink }
+    40% { color: purple; }
+    60% { color: blue; }
+    80% { color: lime; }
+    90% { color: yellow; }
+    100% { color: red; }
+}
+
+.LoadingTitle {
+    color: blue;
+    animation: color-change 5s infinite, rotation 2s infinite linear;
+    padding: 2rem;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.CubeClass {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    /* transform: rotateX( -30deg ); */
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX( -30deg ) rotateY( 0deg );
+    }
+
+    100% {
+        transform: rotateX( -30deg ) rotateY( 360deg );
+    }
+}
+
+.CubeClass div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.CubeClass div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: green;*/
+    background: linear-gradient( black, green );
+    transform: rotateY( calc( 90deg * var( --i ) ) ) translateZ( 150px );
+}
+
+/* now we have a simple green square */
+
+.TopClass {
+    position: absolute;
+    content: 'H';
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #222;
+    transform: rotateX( 90deg ) translateZ( 150px );
+}
+
+.TopClass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #0f0;
+    transform: translateZ( -398px );
+    filter: blur( 20px );
+    box-shadow:
+    0 0 120px rgba( 0, 255, 0, 0.2 ),
+    0 0 200px rgba( 0, 255, 0, 0.4 ),
+    0 0 300px rgba( 0, 255, 0, 0.6 ),
+    0 0 400px rgba( 0, 255, 0, 0.8 ),
+    0 0 500px rgba( 0, 255, 0, 1.0 ),
+}
+
+/* 
+.TopClass div span::before {
+    content: 'S';
+} */
+
+.TopClass::after {
+    content: "H";
+}
+
+.TextClass {
+    position: relative;
+    content: "Hello";
+    transform: translateZ( 150px ) translateY( 350px ) translateX( 150px );
+    color: aqua;
+}
+
+.ButtonClass {
+    transform: scale( 1.5 );
+    margin: 1rem;
+}
+
+.DivTest-Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hidden {
+    display: none;
+}

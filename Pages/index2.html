@@ -1,0 +1,86 @@
+<!--   file:///Users/ss/Desktop/Projects/GitHub/trigometry_run/Pages/index.html   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIGOMETRY RUN</title>
+    <link rel="stylesheet" href="../Styles/IndexStyles.css">
+    <script src="../Scripts/LoadingScript.js"></script>
+</head>
+<body>
+    <div id='FirstDiv' class="DivTest">
+        <h1 class="LoadingTitle">Loading...</h1>
+    </div>
+
+    
+
+    <div id='SecondDiv' class="CubeClass">
+        <div class="TopClass"></div>
+        <div>
+            <span style="--i:0;" ></span>
+            <span style="--i:1;" ></span>
+            <span style="--i:2;" ></span>
+            <span style="--i:3;" ></span>
+        </div>
+        <div class="TextClass"></div>
+    </div>
+
+
+    <!-- DivTest-Button -->
+    <div id='ButtonDiv' class="Hidden">
+        <img src="../Images/arrow-right.gif" alt="" width="100" height="20">
+        <button onclick="PlayMTBK()" class="ButtonClass">PLAY</button>
+        <img src="../Images/arrow-right.gif" alt="" width="100" height="20" style="transform:rotate(180deg);">
+    </div>
+
+
+    <style>
+        .DivTest-Button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+
+
+    <script>
+        setTimeout( function() {
+            // hide the loading elements
+            document.getElementById( 'FirstDiv' ).style.display = 'none';
+            document.getElementById( 'SecondDiv' ).style.display = 'none';
+
+            // show play button
+            document.getElementById( 'ButtonDiv' ).style.display = 'flex';
+            document.getElementById( 'ButtonDiv' ).style.alignItems = 'center';
+            document.getElementById( 'ButtonDiv' ).style.justifyContent = 'center';
+        }, 3000 );
+    </script>
+
+
+
+
+
+<!-- Div1 -->
+    <div id='FullDiv' class="Hidden">
+        <div class="DivTest">
+            <h1 class="Title"><img src="https://c.tenor.com/bhx4xCMwN_EAAAAC/omg-wow.gif" width='50' height="50"> WELCOME TO TRIGOMETRY RUN <img src="https://c.tenor.com/bhx4xCMwN_EAAAAC/omg-wow.gif" width='50' height="50"> <span class="DivTest">👇👇 PLAY BELOW 👇👇</span></h1>
+        </div>
+        
+        <div class='DivTest'>
+            <iframe class='GameFrame' src="https://scratch.mit.edu/projects/656439548/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+
+        <div class="DivTest">
+            <h1 class="Marquee"><img src="../Images/thank-you.gif" width='75' height="75">GAME COURTESY OF CODY NICHOLAS SIMS<img src="../Images/thank-you.gif" width='75' height="75"></h1>
+        </div>
+
+    </div>  
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+/* CSS FOR THE UNDER CONSTRUCTION PAGE */
+
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(129, 5, 5);
+    font-family: "Comic Sans MS";
+}
+
+.Div1 {
+    background-color: rgb(129, 5, 5);
+    align-items: center;
+    justify-content: center;
+}
+
+.Text {
+    animation: color-change 5s infinite;
+}
+
+
+@keyframes color-change {
+    0% { color: red; }
+    20% { color: yellow }
+    40% { color: lime; }
+    60% { color: blue; }
+    80% { color: purple; }
+    90% { color: pink; }
+    100% { color: red; }
+}
