@@ -9,6 +9,7 @@
     <title>TRIGOMETRY RUN</title>
     <link rel="stylesheet" href="../Styles/IndexStyles.css">
     <script src="../Scripts/LoadingScript.js"></script>
+    <script src="../Scripts/GameScripts.js"></script>
 </head>
 <body>
     <div id='FirstDiv' class="DivTest">
@@ -71,7 +72,26 @@
         </div>
         
         <div class='DivTest'>
-            <iframe class='GameFrame' src="https://scratch.mit.edu/projects/656439548/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <!-- <iframe class='GameFrame' src="https://scratch.mit.edu/projects/656439548/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe> -->
+
+            <div style="overflow: hidden; height: 480px; width: 640px;" >
+                <iframe id="GameFrame" style="margin-top:-50px; margin-left:-11px;" scrolling="no" allowtransparency="false" width="658" height="536" bgcolor=#220000 src="https://scratch.mit.edu/projects/656439548/embed/" allowfullscreen></iframe>
+                <br/><br/>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="MobileControls">
+
+            <script src="../Scripts/GameScripts.js"></script>
+
+            <!-- <button class="ShootButton"></button> -->
+            <input id="ShootButton_ID" type="image" onclick="ShootFunction()" class="ShootButton" src="../Images/shoot.png" />
+            <input id="JumpButton_ID" type="image" onclick="JumpFunction()" class="JumpButton" src="../Images/jump.png" />
+
+            <!-- <button class="JumpButton">JUMP</button> -->
         </div>
 
         <div class="DivTest">

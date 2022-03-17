@@ -250,3 +250,47 @@ body {
 .Hidden {
     display: none;
 }
+
+.MobileControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale( 1.5 );
+}
+
+/* .ShootButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-image: url( '../Images/shoot.png' ) no-repeat;
+    background-color: transparent;
+    border-color: transparent;
+} */
+
+.ShootButton {
+    transform: scale( 0.8 );
+}
+
+.ShootButton:hover {
+    transform: scale( 1.0 );
+}
+
+.ShootButton:active {
+    transform: scale( 1.35 );
+}
+
+
+
+.JumpButton {
+    transform: scale( 0.8 );
+}
+
+.JumpButton:hover {
+    transform: scale( 1.0 );
+}
+
+.JumpButton:active {
+    transform: scale( 1.35 );
+}
