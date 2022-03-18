@@ -190,8 +190,6 @@ body {
     transform: rotateY( calc( 90deg * var( --i ) ) ) translateZ( 150px );
 }
 
-/* now we have a simple green square */
-
 .TopClass {
     position: absolute;
     content: 'H';
@@ -221,10 +219,6 @@ body {
     0 0 500px rgba( 0, 255, 0, 1.0 ),
 }
 
-/* 
-.TopClass div span::before {
-    content: 'S';
-} */
 
 .TopClass::after {
     content: "H";
@@ -259,16 +253,9 @@ body {
     transform: scale( 1.5 );
 }
 
-/* .ShootButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
-    background-image: url( '../Images/shoot.png' ) no-repeat;
-    background-color: transparent;
-    border-color: transparent;
-} */
+
+
+
 
 .ShootButton {
     transform: scale( 0.8 );
@@ -281,6 +268,8 @@ body {
 .ShootButton:active {
     transform: scale( 1.35 );
 }
+
+
 
 
 

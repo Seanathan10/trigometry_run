@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; /Pages/index2.html"/>
+    <!-- <meta http-equiv="refresh" content="0; /Pages/index2.html"/> -->
     <title>Document</title>
 </head>
-<body>
-    <div>
 
+<style>
+    .HTML_Body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .DivAroundRedirectButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .RedirectButton {
+        text-align: center;
+        transform: scale( 2.0 );
+        margin-top: 1vh;
+    }
+</style>
+
+<script>
+    function RedirectToGame() {
+        window.location.href = '../Pages/index2.html';
+    }
+</script>
+
+
+<body class="HTML_Body">
+
+    <div class="DivAroundRedirectButton">
+        <button class="RedirectButton" onclick="RedirectToGame()">Click here if you are not redirected to the game</button>
     </div>
+
 </body>
 </html>
