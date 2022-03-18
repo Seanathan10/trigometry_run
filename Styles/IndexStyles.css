@@ -7,7 +7,8 @@ html {
     height: 100%;
     background-color: rgb(129, 5, 5);
     font-family: "Comic Sans MS";
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: hidden;
 
     margin:0;
     padding: 0;
