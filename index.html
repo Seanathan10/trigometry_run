@@ -16,15 +16,29 @@
     }
 
     .DivAroundRedirectButton {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
+        text-align: center;
     }
 
     .RedirectButton {
-        text-align: center;
+        /* text-align: center;
         transform: scale( 2.0 );
         margin-top: 1vh;
+        border-color: red;
+        border-radius: 5rem;
+        margin: 1rem; */
+
+        border-color: lime;
+        border-radius: 0.5rem;
+        transform: scale( 2.0 );
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+
+    .InnerButtonDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
 
@@ -38,7 +52,30 @@
 <body class="HTML_Body">
 
     <div class="DivAroundRedirectButton">
-        <button class="RedirectButton" onclick="RedirectToGame()">Click here if you are not redirected to the game</button>
+        <img src="/Images/arrow-down.gif" alt="">
+        <br/>
+
+        <div class="InnerButtonDiv">
+            <img src="/Images/arrow-right.gif" alt="" width="100" height="20"/>
+
+            <button class="RedirectButton" onclick="RedirectToGame()">Click here if you are not redirected to the game automatically</button>
+
+            <img src="../Images/arrow-right.gif" alt="" width="100" height="20" style="transform:rotate(180deg);"/>
+        </div>
+        
+        <br/>
+        <img src="/Images/arrow-down.gif" alt="" style="transform:rotate(180deg);">
+
+        <br/>
+
+        <img src="/Images/ризван-казахстан.gif" alt="">
+
+        <br/>
+        <br/>
+        <br/>
+
+        <input type="text">
+        <button>Webpage management (password needed)</button>
     </div>
 
 </body>
