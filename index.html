@@ -13,6 +13,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        animation: color-change 5s infinite;
     }
 
     .DivAroundRedirectButton {
@@ -39,6 +40,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    @keyframes color-change {
+        0% { background-color: red; }
+        20% { background-color: yellow }
+        40% { background-color: lime; }
+        60% { background-color: blue; }
+        80% { background-color: purple; }
+        100% { background-color: pink; }
+        /* 100% { background-color: red; } */
     }
 </style>
 
